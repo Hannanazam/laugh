@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="assets/style.css" type="text/css"> -->
+    <link rel="stylesheet" href="assets/about.css" type="text/css">
+    <!-- <link rel="stylesheet" href="assets/style.css" type="text/css"> -->
+<link href='https://fonts.googleapis.com/css?family=Spartan' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+    <title>Document</title>
+    <style>
+      .offcanvas-header {
+    border-bottom: 1px solid gray !important;
+}
+div#offcanvasExample {
+    background: #C9C9C9 !important;
+}
+      ul.new-ul-ft li a {
+    text-decoration: none;
+    color: #cbc9c9;
+}
+      @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Arsenal:wght@700&family=Inter&family=League+Spartan:wght@400;800&family=Nunito&family=Open+Sans&family=Outfit:wght@400;500;700&family=PT+Sans:ital@1&family=Playfair+Display:wght@600&family=Poppins:wght@300;400&family=Rubik:wght@500&display=swap');
+section.secttion-canabis {
+    background-image: url(./img/leave-canabis.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+      .main-canabis {
+    display: inline-flex;
+}
+.main-canabis p {
+    margin-left: 56px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+}
+.row.canabis-row {
+    width: 100%;
+    margin: 0 auto;
+}
+.row.procanabis-rowsee {
+    width: 90%;
+    margin: 0 auto;
+    /* column-gap: 24px; */
+}
+.row.canabis-row h1 {
+    margin-left: 56px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 68px;
+    line-height: 68px;
+    text-transform: uppercase;
+    color: #000000;
+}
+        .overlay {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+         background-image:linear-gradient(rgb(0 0 0 / 24%),rgb(0 0 0 / 38%)), url(./img/leaves.png);
+         background-size: 100% 100%;
+
+          overflow-x: hidden;
+          transition: 0.5s;
+        }
+        
+        .overlay-content {
+          position: relative;
+          top: 25%;
+          width: 100%;
+          text-align: center;
+          margin-top: 30px;
+        }
+        
+        .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    /* font-size: 36px; */
+    /* color: #818181; */
+    display: block;
+    transition: 0.3s;
+    font-family: 'Playfair Display' !IMPORTANT;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    /* line-height: 166px; */
+    color: #FFFFFF;
+}
+        
+        .overlay a:hover, .overlay a:focus {
+          color: #f1f1f1;
+        }
+        
+        .overlay .closebtn {
+          position: absolute;
+          top: 20px;
+          right: 45px;
+          font-size: 60px;
+        }
+        
+        @media screen and (max-height: 450px) {
+          .overlay a {font-size: 20px}
+          .overlay .closebtn {
+          font-size: 40px;
+          top: 15px;
+          right: 35px;
+          }
+        }
+
+input[type=text] {
+  width: 150px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: transparent;
+  
+  background-size:auto;
+  
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+.options-cana {
+    display: flex;
+  
+    align-items: center;
+}
+.options-cana p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #484F56;
+}
+.options-cana h6 {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #484F56;
+    padding-top: 10px;
+    margin-left: 70px !IMPORTANT;
+}
+
+
+.select {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 0;
+    color: #484F56;
+}
+.card-canabis h5 {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+.card-canabis p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 0;
+    text-transform: uppercase;
+    color: #484F56;
+    padding-top: 15px;
+}
+.pro-image IMG {
+    WIDTH: 85%;
+}
+.price-canbis p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 14px;
+    color: #484F56;
+}
+section.pro-canabis {
+    background-image: url(./img/pro-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+        </style>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row head-about">
+                <div class="col-md-1 nav-col col">
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                          <div class="canabis-logo">
+                              <img src="./img/whitelogo.png" alt="">
+                          </div>
+                          <a href="./index.html">HOME</a>
+                        <a href="./about.html">About</a>
+                        <a href="./contact.html">CONTACT US</a>
+                        <a href="./main-store.html">SHOP</a>
+                        
+                        
+                      </div>
+                      </div>
+                     
+                      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
+                <div class="col-md-2 ser">
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                      </form>
+                </div>
+            
+                <div class="col-md-8">
+                    <div class="center-logo">
+                        <img src="img/logo-phant.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-1 neww">
+                    <a href="./main-store.html"><img class="icons-cart" src="img/right-arrow.png" alt=""></a>
+                </div>
+                <div class="col-md-1 neww">
+                    <img class="icon-cart" src="img/cart-about.png" alt="">
+                </div>
+            </div>
+            <hr>
+            
+      
+    </header>
+   <section class="secttion-canabis">
+    <div class="container-fluid">
+      <div class="row canabis-row">
+        <div class="col-md-12">
+          <h1>Cannabis</h1>
+          <br>
+     <div class="main-canabis">
+            <p>French orange<br>unbleached papers</p>
+            <p>French orange<br>unbleached papers</p>
+            <p>French orange<br>unbleached papers</p>
+            <p>French orange<br>unbleached papers</p>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+
+   </section>
+   <section class="pro-canabis">
+    <div class="container-fluid">
+      <div class="row procanabis-rowsee">
+        <div class="col-md-3 my-5">
+          <div class="card-canabis">
+            <div class="pro-image">
+              <img src="./img/canabis1.png" alt="">
+            </div>
+            <p>Zenuro</p>
+            <h5>Unbleached Cones King</h5>
+            <div class="price-canbis">
+              <p>$29.00</p>
+            </div>
+            <div class="options-cana">
+              <p class="select">Select options</p>
+              <h6>QUICKVIEW &nbsp;<i class="fa fa-heart-o"></i></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 my-5">
+          <div class="card-canabis">
+            <div class="pro-image">
+              <img src="./img/canabis2.png" alt="">
+            </div>
+            <p>Zenuro</p>
+            <h5>Unbleached Cones King</h5>
+            <div class="price-canbis">
+              <p>$29.00</p>
+            </div>
+            <div class="options-cana">
+              <p class="select">Select options</p>
+              <h6>QUICKVIEW &nbsp;<i class="fa fa-heart-o"></i></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 my-5">
+          <div class="card-canabis">
+            <div class="pro-image">
+              <img src="./img/canabis3.png" alt="">
+            </div>
+            <p>Zenuro</p>
+            <h5>Unbleached Cones King</h5>
+            <div class="price-canbis">
+              <p>$29.00</p>
+            </div>
+            <div class="options-cana">
+              <p class="select">Select options</p>
+              <h6>QUICKVIEW &nbsp;<i class="fa fa-heart-o"></i></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 my-5">
+          <div class="card-canabis">
+            <div class="pro-image">
+              <img src="./img/canabis4.png" alt="">
+            </div>
+            <p>Zenuro</p>
+            <h5>Unbleached Cones King</h5>
+            <div class="price-canbis">
+              <p>$29.00</p>
+            </div>
+            <div class="options-cana">
+              <p class="select">Select options</p>
+              <h6>QUICKVIEW &nbsp;<i class="fa fa-heart-o"></i></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row procanabis-rowsee">
+        <div class="col-md-3 my-5">
+          <div class="card-canabis">
+            <div class="pro-image">
+              <img src="./img/canabis5.png" alt="">
+            </div>
+            <p>Zenuro</p>
+            <h5>Unbleached Cones King</h5>
+            <div class="price-canbis">
+              <p>$29.00</p>
+            </div>
+            <div class="options-cana">
+              <p class="select">Select options</p>
+              <h6>QUICKVIEW &nbsp;<i class="fa fa-heart-o"></i></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 my-5">
+          <div class="card-canabis">
+            <div class="pro-image">
+              <img src="./img/canabis6.png" alt="">
+            </div>
+            <p>Zenuro</p>
+            <h5>Unbleached Cones King</h5>
+            <div class="price-canbis">
+              <p>$29.00</p>
+            </div>
+            <div class="options-cana">
+              <p class="select">Select options</p>
+              <h6>QUICKVIEW &nbsp;<i class="fa fa-heart-o"></i></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 my-5">
+          <div class="card-canabis">
+            <div class="pro-image">
+              <img src="./img/canabis7.png" alt="">
+            </div>
+            <p>Zenuro</p>
+            <h5>Unbleached Cones King</h5>
+            <div class="price-canbis">
+              <p>$29.00</p>
+            </div>
+            <div class="options-cana">
+              <p class="select">Select options</p>
+              <h6>QUICKVIEW &nbsp;<i class="fa fa-heart-o"></i></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 my-5">
+          <div class="card-canabis">
+            <div class="pro-image">
+              <img src="./img/canabis8.png" alt="">
+            </div>
+            <p>Zenuro</p>
+            <h5>Unbleached Cones King</h5>
+            <div class="price-canbis">
+              <p>$29.00</p>
+            </div>
+            <div class="options-cana">
+              <p class="select">Select options</p>
+              <h6>QUICKVIEW &nbsp;<i class="fa fa-heart-o"></i></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row procanabis-rowsee">
+        <div class="col-md-3 my-5">
+          <div class="card-canabis">
+            <div class="pro-image">
+              <img src="./img/canabis9.png" alt="">
+            </div>
+            <p>Zenuro</p>
+            <h5>Unbleached Cones King</h5>
+            <div class="price-canbis">
+              <p>$29.00</p>
+            </div>
+            <div class="options-cana">
+              <p class="select">Select options</p>
+              <h6>QUICKVIEW &nbsp;<i class="fa fa-heart-o"></i></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 my-5">
+          <div class="card-canabis">
+            <div class="pro-image">
+              <img src="./img/canabis10.png" alt="">
+            </div>
+            <p>Zenuro</p>
+            <h5>Unbleached Cones King</h5>
+            <div class="price-canbis">
+              <p>$29.00</p>
+            </div>
+            <div class="options-cana">
+              <p class="select">Select options</p>
+              <h6>QUICKVIEW &nbsp;<i class="fa fa-heart-o"></i></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 my-5">
+          <div class="card-canabis">
+            <div class="pro-image">
+              <img src="./img/canabis11.png" alt="">
+            </div>
+            <p>Zenuro</p>
+            <h5>Unbleached Cones King</h5>
+            <div class="price-canbis">
+              <p>$29.00</p>
+            </div>
+            <div class="options-cana">
+              <p class="select">Select options</p>
+              <h6>QUICKVIEW &nbsp;<i class="fa fa-heart-o"></i></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 my-5">
+          <div class="card-canabis">
+            <div class="pro-image">
+              <img src="./img/canabis12.png" alt="">
+            </div>
+            <p>Zenuro</p>
+            <h5>Unbleached Cones King</h5>
+            <div class="price-canbis">
+              <p>$29.00</p>
+            </div>
+            <div class="options-cana">
+              <p class="select">Select options</p>
+              <h6>QUICKVIEW &nbsp;<i class="fa fa-heart-o"></i></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row procanabis-rowsee">
+        <div class="col-md-3 my-5">
+          <div class="card-canabis">
+            <div class="pro-image">
+              <img src="./img/canabis13.png" alt="">
+            </div>
+            <p>Zenuro</p>
+            <h5>Unbleached Cones King</h5>
+            <div class="price-canbis">
+              <p>$29.00</p>
+            </div>
+            <div class="options-cana">
+              <p class="select">Select options</p>
+              <h6>QUICKVIEW &nbsp;<i class="fa fa-heart-o"></i></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 my-5">
+          <div class="card-canabis">
+            <div class="pro-image">
+              <img src="./img/canabis14.png" alt="">
+            </div>
+            <p>Zenuro</p>
+            <h5>Unbleached Cones King</h5>
+            <div class="price-canbis">
+              <p>$29.00</p>
+            </div>
+            <div class="options-cana">
+              <p class="select">Select options</p>
+              <h6>QUICKVIEW &nbsp;<i class="fa fa-heart-o"></i></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 my-5">
+          <div class="card-canabis">
+            <div class="pro-image">
+              <img src="./img/canabis15.png" alt="">
+            </div>
+            <p>Zenuro</p>
+            <h5>Unbleached Cones King</h5>
+            <div class="price-canbis">
+              <p>$29.00</p>
+            </div>
+            <div class="options-cana">
+              <p class="select">Select options</p>
+              <h6>QUICKVIEW &nbsp;<i class="fa fa-heart-o"></i></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 my-5">
+          <div class="card-canabis">
+            <div class="pro-image">
+              <img src="./img/canabis16.png" alt="">
+            </div>
+            <p>Zenuro</p>
+            <h5>Unbleached Cones King</h5>
+            <div class="price-canbis">
+              <p>$29.00</p>
+            </div>
+            <div class="options-cana">
+              <p class="select">Select options</p>
+              <h6>QUICKVIEW &nbsp;<i class="fa fa-heart-o"></i></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+    <footer class="ft-sec">
+        <div class="container-fluid">
+            <div class="row ft-row">
+                <div class="col-md-3">
+                    <div class="ft-logo">
+                        <img src="img/logo-phant.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-ft">
+                        <p>A lifestyle brand birthed to influence action. Our mission is to be the brand that aligns fashion with faith, providing quality apparel with exclusive designs and original content, to fashion-conscious consumers</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="useful-link">
+                        <h1>Useful Links</h1>
+                        <ul class="links">
+                            <li>FAQ</li>
+                            <li>Terms and Privacy</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="useful-link">
+                        <h1>Get Help</h1>
+                        <ul class="new-ul-ft">
+                          <li><a href="./about.html">About</a></li>
+                          <li><a href="./contact.html">Contact Us</a></li>
+                            <li>Order Status</li>
+                            <li>Returns/Exchanges</li>
+                            <li>Shipping Info</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+       
+       
+    </footer>
+    <div class="container-fluid">
+    <div class="row ft-last-row">
+        <div class="col-md-12 col-laugh">
+            <i class="fa fa-copyright">&nbsp;The Laughing Elephant 2023. All rights reserved.</i>
+          </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
+</body>
+</html>

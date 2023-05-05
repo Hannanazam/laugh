@@ -1,0 +1,430 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="assets/style.css" type="text/css"> -->
+    <!-- <link rel="stylesheet" href="assets/about.css?v=<?php echo time(); ?>"> -->
+    <link rel="stylesheet" href="assets/about.css" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Spartan' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+    <title>Document</title>
+    <style>
+        .offcanvas-header {
+    border-bottom: 1px solid gray !important;
+}
+div#offcanvasExample {
+    background: #C9C9C9 !important;
+}
+        ul.new-ul-ft li a {
+    text-decoration: none;
+    color: #cbc9c9;
+}
+    ul.homeul.d-lg-block {
+    PADDING: 0;
+}
+ul.homeul.d-lg-block li a {
+    font-size: 22px;
+    /* margin-bottom: 13px; */
+}
+ul.homeul.d-lg-block li {
+    margin-bottom: 22px;
+}
+section.secttion-canabis {
+    background: #F5F5FA;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* margin-top: 20px; */
+    padding-top: 50px;
+}
+
+      .main-canabis {
+    display: inline-flex;
+}
+.main-canabis p {
+    margin-left: 56px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+}
+.row.canabis-row {
+    width: 100%;
+    margin: 0 auto;
+}
+.row.procanabis-rowsee {
+    width: 90%;
+    margin: 0 auto;
+    /* column-gap: 24px; */
+}
+.row.canabis-row h1 {
+    margin-left: 56px;
+    /* font-family: 'Outfit'; */
+    /* font-style: normal; */
+    /* font-weight: 400; */
+    /* font-size: 68px; */
+    /* line-height: 68px; */
+    /* text-transform: uppercase; */
+    /* color: #000000; */
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #54595F;
+}
+hr {
+    margin: 3px;
+    color: inherit;
+    border: 0;
+    border-top: 1px solid;
+    opacity: .25;
+}
+input[type=text] {
+  width: 150px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: transparent;
+  
+  background-size:auto;
+  
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row head-about">
+                <div class="col-md-1 nav-col col">
+                    <a class="btn btn-primary" id="tch" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        Link with href
+                      </a>
+                      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                        <div class="logo">
+                                              <img class="logoimg" src="img/logo-phant.png" alt="">
+                                          </div>
+                         
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                        <nav class="site-navigation position-relative" role="navigation">
+                                                  <ul class="homeul d-lg-block">
+                                                      <li><a class="active" href="./store.html"><span>MEN</span></a></li>
+                                                      <li><a href="./women.html"><span>WOMEN</span></a></li>
+                                                   
+                                                      <li>
+                                                          <a href="./unisextees.html"><span>UNISEX TEES</span></a>
+                                                      </li>
+                                                      <li><a href="./unisexjack.html">UNISEX JACKETS</a></li>
+                                                      
+                                                      <li><a href="./main-store.html">NEW ARRIVALS</a></li>
+                                                      <li><a href="./about.html">ABOUT US</a></li>
+                                                      <li><a href="./contact.html">CONTACT US</a></li>
+                                                  
+                                                  </ul>
+                                              </nav>
+                                            </div>
+                </div>
+            </div>
+             <div class="col-md-2 ser">
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                      </form>
+                </div>
+                <div class="col-md-1 col">
+                    <a href="./main-store.html"><img class="iconsss" src="img/right-arrow.png" alt=""></a>
+                </div>
+                <div class="col-md-7">
+                    <div class="center-logo">
+                        <img src="img/logo-phant.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-1 neww">
+                    <img class="icons-cart" src="img/fav.png" alt="">
+                </div>
+                <div class="col-md-1 neww">
+                    <img class="icon-cart" src="img/cart-about.png" alt="">
+                </div>
+            </div>
+            <hr>
+            
+      
+    </header>
+    <section class="secttion-canabis">
+        <div class="container-fluid">
+          <div class="row canabis-row">
+            <div class="col-md-12">
+              <h1>UNISEX TEES</h1>
+              <br>
+         <div class="main-canabis">
+                <p>Casual & Urban Wear<br>Jumpers & Cardigans </p>
+                <p>Down Coats & Vests<br>Shorts</p>
+                <p>Jackets<br>Sweatshirts & Hoodies</p>
+                <p>Jeans<br>T-Shirts & Tops </p>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+    
+       </section>
+       <br>
+<div class="section-store">
+    <div class="container-fluid">
+        <!-- we will make store links ok -->
+        <div class="row products">
+            <div class="col-md-3 procol">
+            <div class="card">
+  <img src="img/pro1.png" alt="Denim Jeans" style="width:100%">
+  <h5>Quisuito</h5>
+  <h1>Cut and sew sweatshirt</h1>
+  <div class="align-btn">
+  <p class="price">$24.00</p>
+  <p><button><i class="fa fa-shopping-cart"></i></button></p>
+  </div>
+</div>
+            </div>
+            <div class="col-md-3 procol">
+            <div class="card">
+  <img src="img/pro2.png" alt="Denim Jeans" style="width:100%">
+  <h5>Quisuito</h5>
+  <h1>Cut and sew sweatshirt</h1>
+  <div class="align-btn">
+    <p class="price">$24.00</p>
+    <p><button><i class="fa fa-shopping-cart"></i></button></p>
+    </div>
+</div>
+            </div>
+            <div class="col-md-3 procol">
+            <div class="card">
+  <img src="img/pro3.png" alt="Denim Jeans" style="width:100%">
+  <h5>Quisuito</h5>
+  <h1>Cut and sew sweatshirt</h1>
+  <div class="align-btn">
+    <p class="price">$24.00</p>
+    <p><button><i class="fa fa-shopping-cart"></i></button></p>
+    </div>
+</div>
+            </div>
+            <div class="col-md-3 procol">
+            <div class="card">
+  <img src="img/pro4.png" alt="Denim Jeans" style="width:100%">
+  <h5>Quisuito</h5>
+  <h1>Cut and sew sweatshirt</h1>
+  <div class="align-btn">
+    <p class="price">$24.00</p>
+    <p><button><i class="fa fa-shopping-cart"></i></button></p>
+    </div>
+</div>
+            </div>
+        </div>
+        <div class="row products">
+            <div class="col-md-3 procol">
+            <div class="card">
+  <img src="img/pro5.png" alt="Denim Jeans" style="width:100%">
+  <h5>Quisuito</h5>
+  <h1>Cut and sew sweatshirt</h1>
+  <div class="align-btn">
+    <p class="price">$24.00</p>
+    <p><button><i class="fa fa-shopping-cart"></i></button></p>
+    </div>
+</div>
+            </div>
+            <div class="col-md-3 procol">
+            <div class="card">
+  <img src="img/pro6.png" alt="Denim Jeans" style="width:100%">
+  <h5>Quisuito</h5>
+  <h1>Cut and sew sweatshirt</h1>
+  <div class="align-btn">
+    <p class="price">$24.00</p>
+    <p><button><i class="fa fa-shopping-cart"></i></button></p>
+    </div>
+</div>
+            </div>
+            <div class="col-md-3 procol">
+            <div class="card">
+  <img src="img/pro7.png" alt="Denim Jeans" style="width:100%">
+  <h5>Quisuito</h5>
+  <h1>Cut and sew sweatshirt</h1>
+  <div class="align-btn">
+    <p class="price">$24.00</p>
+    <p><button><i class="fa fa-shopping-cart"></i></button></p>
+    </div>
+</div>
+            </div>
+            <div class="col-md-3 procol">
+            <div class="card">
+  <img src="img/pro8.png" alt="Denim Jeans" style="width:100%">
+  <h5>Quisuito</h5>
+  <h1>Cut and sew sweatshirt</h1>
+  <div class="align-btn">
+    <p class="price">$24.00</p>
+    <p><button><i class="fa fa-shopping-cart"></i></button></p>
+    </div>
+</div>
+            </div>
+        </div>
+        <div class="row products">
+            <div class="col-md-3 procol">
+            <div class="card">
+  <img src="img/pro9.png" alt="Denim Jeans" style="width:100%">
+  <h5>Quisuito</h5>
+  <h1>Cut and sew sweatshirt</h1>
+  <div class="align-btn">
+    <p class="price">$24.00</p>
+    <p><button><i class="fa fa-shopping-cart"></i></button></p>
+    </div>
+</div>
+            </div>
+            <div class="col-md-3 procol">
+            <div class="card">
+  <img src="img/pro10.png" alt="Denim Jeans" style="width:100%">
+  <h5>Quisuito</h5>
+  <h1>Cut and sew sweatshirt</h1>
+  <div class="align-btn">
+    <p class="price">$24.00</p>
+    <p><button><i class="fa fa-shopping-cart"></i></button></p>
+    </div>
+</div>
+            </div>
+            <div class="col-md-3 procol">
+            <div class="card">
+  <img src="img/pro111.png" alt="Denim Jeans" style="width:100%">
+  <h5>Quisuito</h5>
+  <h1>Cut and sew sweatshirt</h1>
+  <div class="align-btn">
+    <p class="price">$24.00</p>
+    <p><button><i class="fa fa-shopping-cart"></i></button></p>
+    </div>
+</div>
+            </div>
+            <div class="col-md-3 procol">
+            <div class="card">
+  <img src="img/pro12.png" alt="Denim Jeans" style="width:100%">
+  <h5>Quisuito</h5>
+  <h1>Cut and sew sweatshirt</h1>
+  <div class="align-btn">
+    <p class="price">$24.00</p>
+    <p><button><i class="fa fa-shopping-cart"></i></button></p>
+    </div>
+</div>
+            </div>
+        </div>
+        <div class="row products">
+            <div class="col-md-3 procol">
+            <div class="card">
+  <img src="img/pro11.png" alt="Denim Jeans" style="width:100%">
+  <h5>Quisuito</h5>
+  <h1>Cut and sew sweatshirt</h1>
+  <div class="align-btn">
+    <p class="price">$24.00</p>
+    <p><button><i class="fa fa-shopping-cart"></i></button></p>
+    </div>
+</div>
+            </div>
+            <div class="col-md-3 procol">
+            <div class="card">
+  <img src="img/pro1.png" alt="Denim Jeans" style="width:100%">
+  <h5>Quisuito</h5>
+  <h1>Cut and sew sweatshirt</h1>
+  <div class="align-btn">
+    <p class="price">$24.00</p>
+    <p><button><i class="fa fa-shopping-cart"></i></button></p>
+    </div>
+</div>
+            </div>
+            <div class="col-md-3 procol">
+            <div class="card">
+  <img src="img/pro13.png" alt="Denim Jeans" style="width:100%">
+  <h5>Quisuito</h5>
+  <h1>Cut and sew sweatshirt</h1>
+  <div class="align-btn">
+    <p class="price">$24.00</p>
+    <p><button><i class="fa fa-shopping-cart"></i></button></p>
+    </div>
+</div>
+            </div>
+            <div class="col-md-3 procol">
+            <div class="card">
+  <img src="img/pro4.png" alt="Denim Jeans" style="width:100%">
+  <h5>Quisuito</h5>
+  <h1>Cut and sew sweatshirt</h1>
+  <div class="align-btn">
+    <p class="price">$24.00</p>
+    <p><button><i class="fa fa-shopping-cart"></i></button></p>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer class="ft-sec">
+        <div class="container-fluid">
+            <div class="row ft-row">
+                <div class="col-md-3">
+                    <div class="ft-logo">
+                        <img src="img/logo-phant.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-ft">
+                        <p>A lifestyle brand birthed to influence action. Our mission is to be the brand that aligns fashion with faith, providing quality apparel with exclusive designs and original content, to fashion-conscious consumers</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="useful-link">
+                        <h1>Useful Links</h1>
+                        <ul class="links">
+                            <li>FAQ</li>
+                            <li>Terms and Privacy</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="useful-link">
+                        <h1>Get Help</h1>
+                        <ul class="new-ul-ft">
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="./contact.html">Contact Us</a></li>
+                            <li>Order Status</li>
+                            <li>Returns/Exchanges</li>
+                            <li>Shipping Info</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+       
+        .
+    </footer>
+    <div class="container-fluid">
+    <div class="row ft-last-row">
+        <div class="col-md-12 col-laugh">
+            <i class="fa fa-copyright">&nbsp;The Laughing Elephant 2023. All rights reserved.</i>
+          </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

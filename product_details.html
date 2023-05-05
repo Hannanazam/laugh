@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="assets/style.css" type="text/css"> -->
+    <link rel="stylesheet" href="assets/about.css" type="text/css">
+    <!-- <link rel="stylesheet" href="assets/style.css" type="text/css"> -->
+    <link href='https://fonts.googleapis.com/css?family=Spartan' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Document</title>
+    <style>
+        .offcanvas-header {
+    border-bottom: 1px solid gray !important;
+}
+div#offcanvasExample {
+    background: #C9C9C9 !important;
+}
+        ul.new-ul-ft li a {
+    text-decoration: none;
+    color: #cbc9c9;
+}
+            ul.homeul.d-lg-block {
+    PADDING: 0;
+}
+ul.homeul.d-lg-block li a {
+    font-size: 22px;
+    /* margin-bottom: 13px; */
+}
+ul.homeul.d-lg-block li {
+    margin-bottom: 22px;
+}
+.Wear {
+    display: flex;
+}
+.Wear p {
+    margin-left: 10px;
+}
+.size {
+    display: flex;
+    /* justify-content: center; */
+}
+.xl {
+    margin-left: 35px;
+}
+.wrapper {
+
+	margin: 0 auto;
+	/*padding-top: 3em;*/
+}
+.cart-box {
+	display: inline-block;
+	padding: 1em;
+	border-radius: .8em;
+	background: #fff;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.qty,
+.submit {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	height: 3em;
+	padding: 1em;
+	line-height: 1em;
+	text-align: center;
+	border-radius: .6em;
+	background: #ccc;
+}
+input.qty {
+	z-index: 2;
+	width: 3em;
+	padding: 0;
+	height: 3.28em;
+	border: .15em solid #fff;
+}
+.qty-minus {
+	margin-right: -1em;
+	padding: 1em 1.2em 1em .8em;
+}
+.qty-plus {
+	margin-left: -1em;
+		padding: 1em .8em 1em 1.2em;
+}
+.submit {
+	margin-left: 1em;
+	border: none;
+	background: #000;
+	color: #fff;
+}
+input::-webkit-inner-spin-button {
+	display: none;
+	margin: 0;
+}
+.qty,
+.submit {
+	font-size: 14px;
+}
+.social {
+    display: flex;
+align-items:center;
+}
+.icons-social a {
+    margin-left: 15px;
+}
+.img-single img {
+    width: 100%;
+}
+.row.row-single {
+    width: 80%;
+    margin: 0 auto;
+}
+.Wear p {
+     font-family: 'Spartan'; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    /* line-height: 12px; */
+    text-transform: uppercase;
+    color: #6D757E;
+}
+h1.paradise {
+     font-family: 'Spartan'; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    color: #484F56;
+}
+p.zenu {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #484F56;
+}
+p.Proactively {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    color: #484F56;
+}
+
+.size p {
+     font-family: 'Spartan'; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #6D757E;
+}
+p.sku {
+     font-family: 'Spartan'; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #6D757E;
+}
+.social p {
+     font-family: 'Spartan'; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    /* line-height: 12px; */
+    color: #484F56;
+    margin: 0;
+}
+h1.Description {
+     font-family: 'Spartan'; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #484F56;
+}
+p.grow {
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #484F56;
+}
+h3.sizing {
+     font-family: 'Spartan'; 
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    
+    color: #303131;
+}
+p.offer {
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    
+    color: #484F56;
+}
+ul.weight li {
+    list-style-type: none;
+    font-family: 'Spartan';
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #484F56;
+}
+p.supply {
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 27px;
+    color: #484F56;
+}
+h3.Starting {
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+    color: #303131;
+}
+ul.weight {
+    padding: 0;
+}
+.row.second-roww {
+    WIDTH: 80%;
+    MARGIN: 0 AUTO;
+    PADDING-TOP: 30PX;
+}
+button.reviews {
+    background: transparent;
+    border: 1px solid #ADB5BD;
+    border-radius: 2px;
+    padding: 9px;
+    /* font-family: 'Spartan'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #353B41;
+}
+.image1-pro img {
+    width: 100%;
+}
+.relate-product img {
+    width: 74%;
+}
+.row.third-row-pro {
+    padding-top: 8vw;
+    display: flex;
+    margin: 0 auto !important;
+    width: 85%;
+}
+p.eco {
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #1A1A1A;
+}
+p.price-relate {
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 22px;
+    color: #222222;
+}
+input[type=text] {
+  width: 150px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: transparent;
+  
+  background-size:auto;
+  
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row head-about">
+                <div class="col-md-1 nav-col col">
+                    <a class="btn btn-primary" id="tch" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        Link with href
+                      </a>
+                      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                        <div class="logo">
+                                              <img class="logoimg" src="img/logo-phant.png" alt="">
+                                          </div>
+                         
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                        <nav class="site-navigation position-relative" role="navigation">
+                            <ul class="homeul d-lg-block">
+                                <li><a class="active" href="./store.html"><span>MEN</span></a></li>
+                                <li><a href="./women.html"><span>WOMEN</span></a></li>
+                             
+                                <li>
+                                    <a href="./unisextees.html"><span>UNISEX TEES</span></a>
+                                </li>
+                                <li><a href="./unisexjack.html">UNISEX JACKETS</a></li>
+                                
+                                <li><a href="./main-store.html">NEW ARRIVALS</a></li>
+                                <li><a href="./about.html">ABOUT US</a></li>
+                                <li><a href="./contact.html">CONTACT US</a></li>
+                            
+                            </ul>
+                                              </nav>
+                                            </div>
+                </div>
+            </div>
+                <div class="col-md-2 ser">
+                    <form>
+                        <input type="text" name="search" placeholder="Search..">
+                      </form>
+                </div>
+                <div class="col-md-1 col">
+                    <a href="./main-store.html"><img class="iconsss" src="img/right-arrow.png" alt=""></a>
+                </div>
+                <div class="col-md-7">
+                    <div class="center-logo">
+                        <img src="img/logo-phant.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-1 neww">
+                    <img class="icons-cart" src="img/fav.png" alt="">
+                </div>
+                <div class="col-md-1 neww">
+                    <img class="icon-cart" src="img/cart-about.png" alt="">
+                </div>
+            </div>
+            <hr>
+              </header>
+<section class="sec1-pro">
+    <div class="container-fluid">
+        <div class="row row-single">
+            <div class="col-md-6">
+            <div class="img-single">
+                <img src="./img/single-pro.png"/>
+            </div>
+            </div>
+            <div class="col-md-6">
+                <div class="Wear">
+                    <p>Men   ></p><p>Casual & Urban Wear</p>
+                </div>
+                <h1 class="paradise">Black Paradise Slogan T-Shirt</h1>
+                <p class="zenu">Zenuro</p>
+                <p class="Proactively">Proactively communicate corporate process improvements via corporate scenarios. Progressively aggregate proactive data after diverse users. Rapidiously redefine front-end interfaces before go forward process improvements.</p>
+                <div class="size">
+                    <p>size</p>
+                   <div class="xl">
+                       <p>XS | S | M | L | XL | XXL</p>
+                   </div>
+                </div>
+             <form class="wrapper">
+	
+	<div class="cart-box">
+		<div class="qty qty-minus" onclick="decreaseQty('cartQty')">-</div>
+		<input id="cartQty" class="qty" type="number" value="1" min="1" size="1">
+		<div class="qty qty-plus" onclick="increaseQty('cartQty')">+</div>
+		<input class="submit" type="submit" value="Add to Cart">
+	</div>
+	
+</form>
+<p class="sku">SKU:N/A</p>
+<p class="sku">Categories: Casual & Urban Wear Men, T-Shirts & Tops</p>
+<div class="social">
+    <p>SHARE</p>
+    <div class="icons-social">
+        <a><i class="fa fa-twitter"></i></a>
+        <a><i class="fa fa-facebook"></i></a>
+        <a><i class="fa fa-linkedin"></i></a>
+    </div>
+</div>
+       
+            </div>
+        </div>
+    </div>
+    
+    
+</section>
+<section class="sec2-new-single">
+    
+    <div class="container-fluid">
+    <div class="row second-roww">
+        <div class="col-md-4">
+            <h1 class="Description">Description</h1>
+        <p class="grow">Compellingly grow performance based mindshare through parallel potentialities. Rapidiously underwhelm top-line catalysts for change before best-of-breed materials. Competently brand timely catalysts for change through sustainable systems. Completely expedite ubiquitous bandwidth after integrated action items. Progressively transform leading-edge supply chains whereas flexible niche markets.</p>
+        </div>
+         <div class="col-md-4">
+              <h1 class="Description">Information</h1>
+              <h3 class="sizing">Shipping</h3>
+              <p class="offer">We currently offer free shipping worldwide on all orders over $100.</p>
+              
+               <h3 class="sizing">Sizing</h3>
+              <p class="offer">Fits true to size. Do you need size advice?</p>
+              
+               <h3 class="sizing">Return & exchange</h3>
+              <p class="offer">If you are not satisfied with your purchase you can return it to us within 14 days for an exchange or refund.</p>
+              
+               <h3 class="sizing">Assistance</h3>
+              <p class="offer">Contact us on (+44) 555 88 65, or email us at</p>
+              
+         </div>
+          <div class="col-md-4">
+                 <h1 class="Description">Information</h1>
+            <div class="row small-row">
+                <div class="col-md-6">
+                    <ul class="weight">
+                        <li>Weight</li>
+                          <li>Dimensions</li>
+                            <li>size</li>
+                              <li>Material</li>
+                                 <li>color</li>
+                              <li>Brand</li>
+                              
+                    </ul>
+                </div>
+                 <div class="col-md-6">
+                          <ul class="weight">
+                        <li>1.20 kg</li>
+                          <li>20 × 10 × 50 cm</li>
+                            <li>XS, S, M, L, XL, XXL</li>
+                              <li>Polyester</li>
+                                 <li>Blacks</li>
+                              <li>Zenuro</li>
+                              
+                    </ul>
+                 </div>
+            </div>
+          </div>
+          <button class="reviews">Reviews (0)</button>
+    </div>
+    </div>
+</section>
+<section class="sec3-new">
+   <div class="container-fluid">
+       <div class="row second-roww">
+          <div class="col-md-6">
+              <div class="image1-pro">
+                  <img src="./img/stand-pic.png"/>
+              </div>
+          </div>
+         
+          <div class="col-md-6">
+          <p class="supply">Completely supply collaborative strategic theme areas with distinctive expertise. Progressively brand long-term high-impact total linkage without synergistic scenarios.</p>
+          <h3 class="Starting">Starting at $39</h3>
+           <div class="image1-pro">
+                  <img src="./img/chair.png"/>
+              </div>
+          </div>
+           </div>
+       </div>
+     
+    
+</section>
+<section class="relat">
+    <div class="container-fluid">
+        <div class="row third-row-pro">
+            <div class="col-md-3">
+                <div class="relate-product">
+                    <img src="./img/pro1.png"/>
+                </div>
+                <p class="eco">Eco Aware organic cotton top</p>
+                <p class="price-relate">$39.00</p>
+            </div>
+            <div class="col-md-3">
+                <div class="relate-product">
+                    <img src="./img/pro1.png"/>
+                </div>
+                <p class="eco">Eco Aware organic cotton top</p>
+                <p class="price-relate">$39.00</p>
+            </div>
+           <div class="col-md-3">
+                <div class="relate-product">
+                    <img src="./img/pro1.png"/>
+                </div>
+                <p class="eco">Eco Aware organic cotton top</p>
+                <p class="price-relate">$39.00</p>
+            </div>
+            <div class="col-md-3">
+                <div class="relate-product">
+                    <img src="./img/pro1.png"/>
+                </div>
+                <p class="eco">Eco Aware organic cotton top</p>
+                <p class="price-relate">$39.00</p>
+            </div>
+        </div>
+    </div>
+    
+</section>
+  <section class="newsletter">
+        <div class="container-fluid">
+            <div class="row newsletter-row">
+                <div class="col-md-6">
+                    <div class="join">
+                        <h1>Join our newsletter</h1>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form action="">
+                        <input class="ema" type="email" placeholder="@Email-Address"><button class="subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="ft-sec">
+        <div class="container-fluid">
+            <div class="row ft-row">
+                <div class="col-md-3">
+                    <div class="ft-logo">
+                        <img src="img/logo-phant.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-ft">
+                        <p>A lifestyle brand birthed to influence action. Our mission is to be the brand that aligns fashion with faith, providing quality apparel with exclusive designs and original content, to fashion-conscious consumers</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="useful-link">
+                        <h1>Useful Links</h1>
+                        <ul class="links">
+                            <li>FAQ</li>
+                            <li>Terms and Privacy</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="useful-link">
+                        <h1>Get Help</h1>
+                        <ul class="new-ul-ft">
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="./contact.html">Contact Us</a></li>
+                            <li>Order Status</li>
+                            <li>Returns/Exchanges</li>
+                            <li>Shipping Info</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+       
+        .
+    </footer>
+    <div class="container-fluid">
+    <div class="row ft-last-row">
+        <div class="col-md-12 col-laugh">
+            <i class="fa fa-copyright">&nbsp;The Laughing Elephant 2023. All rights reserved.</i>
+          </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script type="text/javascript">
+ function increaseQty(qtyId) {
+	var location = document.getElementById(qtyId);
+	var currentQty = location.value;
+	var qty = Number(currentQty) + 1;
+	location.value = qty;
+}
+
+function decreaseQty(qtyId) {
+	var location = document.getElementById(qtyId);
+	var currentQty = location.value;
+	if (currentQty > 1) {
+		var qty = Number(currentQty) - 1;
+		location.value = qty;
+	}
+}
+    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</body>
+</html>

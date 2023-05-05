@@ -1,0 +1,9 @@
+checkout page link:https://mockup.techniklers.com/wp/the-laughing-elephant/checkout.html
+checkout page Name: checkout.html
+**************************************************************************************************
+single Product file Name:https://mockup.techniklers.com/wp/the-laughing-elephant/product_details.html
+single Product file Name:product_details.html
+**************************************************************************************************
+login and signup page link: https://mockup.techniklers.com/wp/the-laughing-elephant/login.html
+login and signup file Name:login.html
+**************************************************************************************************

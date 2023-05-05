@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Spartan' rel='stylesheet'>
+<link rel="stylesheet" href="assets/style.css?v=">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+	<title>Document</title>
+
+	<style type="text/css">
+    
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.bgok:before {
+    content: "";
+    position: absolute;
+    background-image: url(./img/bg-neww.jpg);
+    width: 100%;
+    height: 100%;
+    BACKGROUND-SIZE: cover;
+    Z-INDEX: -1;
+}
+.col-md-9 {
+    position: relative;
+}
+		.product-category-wrap {
+		    min-height: 550px;
+		    /*background-color: #f7f7f7;*/
+		    padding: 40px 30px;
+		    color: #484F56;
+		    /*z-index: -1;*/
+		}
+    img.searchh {
+    width: 100%;
+}
+		.product-category-wrap .image {
+		    margin: 0;
+		    opacity: 0;
+		    visibility: hidden;
+		    transition: all 0.8s ease;
+		    z-index: -1;
+		}
+		.product-category-wrap .image img {
+			object-fit: cover;
+		}
+
+		.product-category-wrap:hover .image {
+		    opacity: 1;
+		    visibility: visible;
+		}
+		.product-category-wrap .content {
+			z-index: 99;
+		}
+    .product-category-wrap .content .title a {
+    /* font-size: 34px; */
+    text-decoration: none;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    /* line-height: 62px; */
+    color: rgba(72, 79, 86, 0.38);
+    /* line-height: 44px; */
+    /* font-weight: 700; */
+    margin-bottom: 0;
+    color: inherit;
+}
+
+		.product-category-wrap .content .text {
+		    color: inherit;
+		    font-size: 18px;
+		    line-height: 28px;
+		}
+
+		.product-category-wrap .content .category-lists {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.product-category-wrap .content .category-lists a {
+		    font-size: 16px;
+		    line-height: 26px;
+		    color: inherit;
+		    text-decoration: none;
+		}
+
+		.product-category-wrap .content .category-lists li {
+		    margin-bottom: 5px;
+		}
+
+		.product-category-wrap:hover .content .category-lists {
+		    opacity: 1;
+		    visibility: visible;
+		}
+
+		.product-category-wrap:hover {
+		    color: #FFF;
+		}
+		.product-category-list .column {
+			padding: 0;
+		}
+    .product-category-list .column:nth-child(1) .product-category-wrap:hover {
+    background-color: #CF2929;
+    opacity: 0.8;
+    
+}
+.product-category-list .column:nth-child(2) .product-category-wrap:hover {
+    color: #000;
+    background-color: #EAB2BF;
+    opacity: 0.8;
+}
+.product-category-list .column:nth-child(3) .product-category-wrap:hover {
+    /* background-color: #0000ffa1; */
+    background: rgba(13, 87, 147, 0.88);
+}
+    .col-md-1.bigse {
+    padding: 8px;
+}
+a.active {
+    color: #000 !important;
+    font-weight: 800 !IMPORTANT;
+}
+
+.product-category-list .column:nth-child(4) .product-category-wrap:hover {
+    background-color: #C3AF97;
+    opacity: 0.9;
+}
+ul.homeul.d-lg-block li {
+  margin-bottom: 25px;
+}
+
+    .sidebar  {
+    background: #EBECEE;
+}
+	</style>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+		<div class="col-lg-3 sidebar">
+			<div class="row col-gap">
+				<div class="col-md-4">
+					<div class="logo">
+						<img class="logoimg" src="img/logo-phant.png" alt="">
+					</div>
+				</div>
+				<div class="col-md-4 rel">
+				<a class="btn btn-primary nav-new" id="tch" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+  Link with href
+</a>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+  <div class="logo">
+						<img class="logoimg" src="img/logo-phant.png" alt="">
+					</div>
+   
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+  <nav class="site-navigation position-relative" role="navigation">
+                            <ul class="homeul d-lg-block">
+                                <li><a class="active" href="./index.html"><span>Home</span></a></li>
+                                <li><a href="./main-store.html"><span>Men's</span></a></li>
+                             
+
+                 
+
+                                <li>
+                                    <a href="./main-store.html"><span>Women's</span></a>
+                                </li>
+                                <li>
+                                    <a href="./main-store.html"><span>NEW ARRIVALS </span></a>
+                                </li>
+                                <li><a href="./canabis.html"><span>Canabis</span></a>
+                              </li>
+                                <li><a href="./accessories.html"><span>Accessories</span></a>
+                              </li>
+                              
+                            </ul>
+                        </nav>
+    
+  </div>
+</div>
+				</div>
+				<div class="col-md-1 bigse">
+					<div class="search">
+						<img class="searchh" src="img/search.png" alt="">
+					</div>
+				
+				</div>
+				<div class="col-md-2">
+				<div class="cart">
+						<img class="cartt" src="img/cart.png" alt="">
+					</div>
+				</div>
+				<br>
+				<hr class="break">
+				<div class="row just-row">
+				<div class="col-md-6">
+					<h5>Just In</h5>
+					<div class="just-img">
+						<img class="just" src="./img/pro2.png" alt="">
+					</div>
+				</div>
+				<div class="col-md-6">
+				<h5>Just In</h5>
+					<div class="just-img">
+						<img class="just" src="./img/hoodie.png" alt="">
+					</div>
+				</div>
+				</div>
+				<hr class="break">
+				<div class="row mail-row">
+					<div class="col-md-12">
+						<div class="mail">
+						<h1 class="get">GET 10% OFF</h1>
+						<div class="width-brd">
+						<input class="maill" type="email" placeholder="email address"><button class="buttonform">JOIN NOW</button>
+						</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		
+		<div class="col-md-9">
+      <div class="row bgok product-category-list align-items-center position-relative">
+        <div class="col-lg-3 col-md-6 position-static column">
+        
+            <div class="product-category-wrap d-flex align-items-end">
+                <figure class="image position-absolute top-50 start-50 translate-middle h-100">
+                    <img src="img/bg1-men.png" class="w-100 h-100">
+                </figure>
+                <div class="content w-100">
+              <ul class="category-lists list-unstyled mb-3">
+           <li>
+                                  <a href='#'>subcat_title</a>
+                              </li>
+              </ul>
+             <h2 class="title"> <a href="./main-store.html">Men's</a></h2>
+                    <p class="text mb-0">BROWSE ALL</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-3 col-md-6 position-static column">
+            <div class="product-category-wrap d-flex align-items-end">
+                <figure class="image position-absolute top-50 start-50 translate-middle h-100">
+                    <img src="img/bg2-women.png" class="w-100 h-100">
+                </figure>
+                <div class="content w-100">
+              <ul class="category-lists list-unstyled mb-3"><li>
+                                  <a href='#'>subcat_title</a>
+                              </li>
+              </ul>
+              <h2 class="title"> <a href="./main-store.html">Women's</a></h2>
+                    <p class="text mb-0">BROWSE ALL</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 position-static column">
+            <div class="product-category-wrap d-flex align-items-end">
+                <figure class="image position-absolute top-50 start-50 translate-middle h-100">
+                    <img src="img/sheeshanew-acc.png" class="w-100 h-100">
+                </figure>
+                <div class="content w-100">
+              <ul class="category-lists list-unstyled mb-3">
+                              <li>
+                                  <a href='#'>canabils_title</a>
+                              </li>
+              </ul>
+              <h2 class="title"> <a href="./canabis.html">Cannabis</a></h2>
+                    <p class="text mb-0">BROWSE ALL</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 position-static column">
+            <div class="product-category-wrap d-flex align-items-end">
+                <figure class="image position-absolute top-50 start-50 translate-middle h-100">
+                    <img src="img/heart-pic.png" class="w-100 h-100">
+                </figure>
+                <div class="content w-100">
+              <ul class="category-lists list-unstyled mb-3"><li>
+                                  <a href='#'>accessories_title</a>
+                              </li>
+              </ul>
+              <h2 class="title"> <a href="./canabis.html">Media Library</a></h2>
+                    <p class="text mb-0">BROWSE ALL</p>
+                </div>
+            </div>
+        </div>
+      </div>
+		</div>
+		
+		</div>
+	</div>
+  <footer>
+    <div class="container-fluid">
+      <div class="row social-row">
+        <div class="col-md-12 icons-col">
+          <div class="follow">
+            <h4>FOLLOW US</h4>
+          </div>
+          <div class="social">
+            <a href=""><i class="fa fa-facebook-f"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-pinterest"></i></a>
+            
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row ft-row2">
+        <div class="col-md-2">
+          <div class="logo-ft">
+						<img class="logoimg-ft" src="img/logo-phant.png" alt="">
+					</div>
+        </div>
+        <div class="col-md-2">
+          <div class="content-ft">
+            <p>17 Irving Pl, New York,<br>NY 10003</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="content-ft">
+            <a href="mailto:care@laughingelephant.com"><p>care@laughingelephant.com</p></a>
+            <a href="tel:778 568 999"><p>778 568 999</p></a>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="content-ft">
+            <p>Frequently Asked Questions</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="content-ft">
+            <p>Returns & Exchanges</p>
+          </div>
+        </div>
+        <div class="col-md-1">
+          <div class="content-ft">
+            <p>Privacy Policy</p>
+          </div>
+        </div>
+        <div class="col-md-1">
+          <div class="content-ft">
+            <p>Terms & Conditions</p>
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <hr>
+      <div class="row last">
+        <div class="col-md-5 col-laugh">
+          <i class="fa fa-copyright">&nbsp;The Laughing Elephant 2023. All rights reserved.</i>
+        </div>
+        <div class="col-md-7 col-secure">
+          <div class="payment">
+
+          <p class="secure">Secure payments</p>
+          <img src="img/cards.png" alt="">
+        </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--  -->
+  <!-- <p style="font-size: 16px;">(Example content) 🍺 Which in turn results in buildup of acetaldehyde, a toxic metabolite of ethanol with similar effects include chloral hydrate, paraldehyde, and many volatile and inhalational anesthetics (e.g., chloroform, diethyl ether, and isoflurane). History Alcohol was brewed as early as the sixth century BCE in Egypt. Pliny the Elder wrote about the golden age of winemaking in Rome, the second century BCE, when vineyards were planted. American history In colonial America, water contamination was common. 🍺</p> -->
+
+<div id="age-verification" >
+  <div class="age-verification-main">
+    <span class="age-title">You must be 21 years old to enter this site.</span>
+   
+    
+    <button class="age-button age-yes" onclick="ageVerificationConfirm()">yes i am over 21 - Enter</button>
+    <button class="age-button age-no" onclick="ageVerificationFailed()">No I am Under 21 - LEAVE</button>
+    
+
+    
+  </div>
+</div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script
+  src="https://code.jquery.com/jquery-3.6.4.js"
+  integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+ var ageCookieName = "age-verification-verified-43212342";
+
+function ageSetCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function ageGetCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function ageVerificationHide() {
+  var ageVerificationModel = document.getElementById('age-verification');
+  ageVerificationModel.style.display = 'none';
+}
+function ageVerificationShow() {
+  var ageVerificationModel = document.getElementById('age-verification');
+  ageVerificationModel.style.display = 'block';
+}
+
+function ageVerificationLoad() {
+    try {
+      var agePass = ageGetCookie(ageCookieName);
+      if (agePass != "") {
+        ageVerificationHide();
+        return;
+      }
+      else {
+        ageVerificationShow();
+      }
+    }
+    catch(err) {
+      ageVerificationShow();
+    }
+}
+
+function ageVerificationConfirm() {
+  ageSetCookie(ageCookieName, "verified", 365);
+  ageVerificationHide();
+}
+
+function ageVerificationFailed() {
+    window.history.back();
+}
+
+/** Run the verification after DOM has been loaded **/
+document.addEventListener("DOMContentLoaded", function(event) {
+  ageVerificationLoad();
+});
+</script>
+</body>
+</html>
